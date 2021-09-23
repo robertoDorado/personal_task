@@ -1,0 +1,32 @@
+{
+    "name": "roberto-dorado/personal-task",
+    "description": "Gerenciamento de Tarefas pessoais",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "comanda-online",
+            "email": "robertodorado7@gmail.com",
+            "homepage": "http://localhost/personal-task",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Boot/Config.php",
+            "source/Boot/Helpers.php",
+            "source/Boot/Minify.php"
+        ]
+    },
+    "require": {
+        "php": "^7.2",
+        "league/plates": "v4.0.0-alpha",
+        "matthiasmullie/minify": "^1.3",
+        "coffeecode/router": "1.0.*"
+    }
+}
