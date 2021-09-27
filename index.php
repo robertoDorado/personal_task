@@ -11,8 +11,7 @@ $route = new MyRouter(url(), ":");
 /**
  * Routes
  */
-
- //Home
+// Site
 $route->namespace("Source\Controllers");
 $route->group(null);
 $route->get("/home", "Home:index");
@@ -23,9 +22,7 @@ $route->group(null);
 $route->get("/login", "Login:login");
 $route->post("/login", "Login:login");
 $route->post("/logout", "Login:logout");
-$route->group(null);
-$route->get("/cadastrar", "Admin:register");
-
+$route->get("/admin", "Admin:index");
 /**
  * Route
  */

@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
 
     <title><?= (isset($title) ? $title . " :: " : "") ?>Personal Task</title>
@@ -21,7 +20,7 @@
     <!-- Inicio da Seção content -->
     <?= $v->section("content"); ?>
 
-    <?php if ($_SERVER['REQUEST_URI'] != "/personal-task/login") : ?>
+    <?php if ($_SERVER['REQUEST_URI'] != "/personal-task/login" && $_SERVER['REQUEST_URI'] != "/personal-task/admin") : ?>
         <section class="section-footer">
             <footer class="footer">
                 <ul class="links-footer">

@@ -89,7 +89,7 @@ body{
     border-radius:5px;
     font-family: 'Roboto';
     text-transform:uppercase;
-    font-weight: 590;
+    font-weight: 650;
 }
 
 .form-login button[type="submit"]:hover{
@@ -139,4 +139,43 @@ body{
 
 .link a:hover{
     opacity:.7;
+}
+
+.main-admin {
+    display:grid;
+    grid-template-areas: 
+    'admin-content-2 admin-content-1 admin-content-1 admin-content-1 admin-content-1'
+    'admin-content-2 admin-content-3 admin-content-3 admin-content-3 admin-content-3'
+    'admin-content-2 admin-content-4 admin-content-4 admin-content-4 admin-content-4';
+    
+    min-width:1200px;
+    margin:auto;
+}
+
+.admin-content-1{
+    background-color:rgb(253, 0, 0);
+    height:10vh;
+    
+    grid-area: admin-content-1;
+}
+
+.admin-content-2{
+    background-color:rgb(0, 17, 253);
+    height:100vh;
+
+    grid-area: admin-content-2;
+}
+
+.admin-content-3{
+    background-color:rgb(0, 253, 0);
+    height:80vh;
+    
+    grid-area: admin-content-3;
+}
+
+.admin-content-4{
+    background-color:rgb(253, 249, 0);
+    height:10vh;
+
+    grid-area: admin-content-4;
 }
