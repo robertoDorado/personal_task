@@ -200,7 +200,7 @@ body {
 }
 
 .admin-content-4 {
-    background-color: rgb(253, 249, 0);
+    background-color: rgb(172, 172, 172);
     height: 10vh;
     grid-area: admin-content-4;
 }
@@ -291,6 +291,57 @@ body {
     font-size: 40px;
     font-weight: bold;
     padding:1rem 0;
+}
+
+/* Table list admin */
+
+.table-tasks{
+    background-color: #fff;
+    border:1px solid #2a2e33;
+}
+
+.thead-tasks tr td{
+    border-bottom:1px solid #2a2e33;
+    border-right:1px solid #2a2e33;
+    font-family: 'Roboto';
+    font-size: 20px;
+    padding: .5rem;
+}
+.thead-tasks tr td:last-child{
+    border-right:none;
+}
+
+.tbody-tasks tr td{
+    border-right:1px solid #2a2e33;
+    font-family: 'Roboto';
+    font-size: 15px;
+    padding: .5rem;
+}
+
+.tbody-tasks tr td:last-child{
+    border-right:none;
+}
+
+.tbody-tasks tr:hover {
+    background-color: rgb(223, 223, 223);
+    color:#fff;
+}
+
+.underline{
+    border-bottom: 1px solid #2a2e33;
+}
+
+.admin-content-4 {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-content-4 p{
+    font-size: 20px;
+    color:rgb(216, 216, 216);
+    font-family: 'Roboto';
 }
 
 @keyframes efect {

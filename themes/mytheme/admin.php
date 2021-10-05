@@ -43,12 +43,67 @@
                         <td>3</td>
                         <td>4</td>
                     </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
     </section>
-    <section class="admin-content-4"></section>
+    <section class="admin-content-4">
+        <p>@Copyright Personal Task - <?= date("Y") ?> Todos os direitos reservados</p>
+    </section>
 </main>
+
+<script>
+    let array_tr = []
+
+    document.querySelectorAll(".tbody-tasks tr").forEach((tr, index) => {
+        if (array_tr.indexOf(tr) == -1) {
+            array_tr.push(tr)
+        }
+
+        if (array_tr.length > 1) {
+            document.querySelectorAll(".tbody-tasks tr td").forEach((td) => {
+                td.classList.add("underline")
+            })
+        }
+    })
+
+    let last_tr = array_tr.slice(-1)[0]
+    last_tr = last_tr.children
+    
+    for(let i=0; i<last_tr.length; i++){
+        last_tr[i].classList.remove("underline")
+    }
+</script>
 
 <script>
     let xhr = new XMLHttpRequest
